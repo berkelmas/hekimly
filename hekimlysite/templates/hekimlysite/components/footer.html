@@ -1,0 +1,84 @@
+{% load static %}
+
+<!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-6 col-lg-3">
+            <a href="{% url 'index' %}"><img width="150" src="{% static 'hekimlysite/img/hekimlysiyah.png' %}" alt="logo"></a>
+          </div>
+
+          <div class="col-6 col-lg-3 text-right order-lg-last">
+            <div class="social">
+              <a class="social-facebook" href="https://www.facebook.com/hekimly/"><i class="fa fa-facebook"></i></a>
+              <a class="social-instagram" href="https://www.instagram.com/hekimly/"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+              <a class="nav-link" href="{% url 'about' %}">Hakkımızda</a>
+              <a class="nav-link" href="{% url 'services' %}">Hizmetler</a>
+              <a class="nav-link" href="{% url 'articles' %}">Yayınlarımız</a>
+              <a class="nav-link" href="{% url 'process' %}">Süreç</a>
+              <a class="nav-link" href="{% url 'contact' %}">İletişim</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer><!-- /.footer -->
+
+
+    <!-- Scripts -->
+    <script src="{% static 'hekimlysite/js/page.min.js' %}"></script>
+    <script src="{% static 'hekimlysite/js/script.js' %}"></script>
+    <script src="{% static 'hekimlysite/js/sweetalert2.js' %}"></script>
+
+
+<script>
+
+     $( document ).ready(function() {
+
+         var getUrlParameter = function getUrlParameter(sParam) {
+             var sPageURL = window.location.search.substring(1),
+                 sURLVariables = sPageURL.split('&'),
+                 sParameterName,
+                 i;
+
+             for (i = 0; i < sURLVariables.length; i++) {
+                 sParameterName = sURLVariables[i].split('=');
+
+                 if (sParameterName[0] === sParam) {
+                     return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                 }
+             }
+         };
+
+         var iletisim = getUrlParameter('gonder');
+
+            if (iletisim === 'ok') {
+                const Toast = Swal.mixin({
+                  toast: true,
+                  position: 'bottom-start',
+                  showConfirmButton: false,
+                  timer: 3000
+                });
+
+                Toast.fire({
+                  type: 'success',
+                  title: 'Başarı ile İletişim Formunuz Gönderildi'
+                });
+            }
+
+     });
+
+
+
+
+</script>
+
+
+  </body>
+</html>

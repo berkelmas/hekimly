@@ -1,0 +1,118 @@
+{% load static %}
+
+{% include 'hekimlysite/components/header.html' %}
+
+
+    <!-- Header -->
+    <header class="header pb-9 pt-10" style="background-image: url('{% static 'hekimlysite/img/hekimly4.png' %}')">
+        <div class="overlay opacity-75" style="background-image: linear-gradient(to top, #989898 0%, #4c8bb1 100%);"></div>
+        <canvas class="constellation" data-radius="0"></canvas>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 style="color: white" class="fw-200 mb-6">Süreç</h1>
+            <p style="color : white;" class="lead-2">Doktorlara ve Sağlık Çalışanlarına Web Sitesi Yapımı, Özel Yazılım Geliştirme ve Tasarım Süreci Nasıl İşler?</p>
+
+            <hr class="w-50px ml-0">
+
+          </div>
+        </div>
+      </div>
+    </header><!-- /.header -->
+
+    <main class="main-content">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Timeline
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="timeline" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Doktorlara Özel Yazılım/Tasarım Süreci</h2>
+            <hr>
+            <p class="lead">Doktorluk Web Sitenizin Geliştirilmesi ve Doktorlara Özel Kurumsal Kimlik Tasarımınızın Yapılması Süreci Nasıl İşliyor?</p>
+          </header>
+
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+              <ol class="timeline">
+                <li class="timeline-item">
+                  <h5>Doktorlarımız İle İşe Başlamadan Önce Toplantı</h5>
+                  <p class="small-2"><time datetime="2017-02-08">Başlangıç</time></p>
+                  <p>Doktorlarımız ile doktorluk web siteleri konusunda toplantı yapılarak; istek, tarz ve öncelikleri göz önünde tutularak oluşturulacak doktorluk web sitesi ve gerekiyorsa doktorlara uygun logo hazırlanması konusunda fikir edinilir. Bunun sonucunda, biz doktorumuzu tanıyarak hem tasarımımıza hem de doktorluk web sitemizin işlevselliğine yönelik çalışmalarımıza başlamış oluruz.</p>
+                </li>
+
+                <li class="timeline-item">
+                  <h5>Doktor/Sağlık Çalışanlarımızın Web Sitesinde Yer Almasını İstediği İçeriklerin Temini</h5>
+                  <p class="small-2"><time datetime="2017-08-17">İçerik Planlama</time></p>
+                  <p><img src="{% static 'hekimlysite/img/iceriktemin.jpeg' %}" alt="doktorlara özel web sitesi"></p>
+                  <p>Doktorlara özel web sitesinin yapımına başlanmadan önce, doktorumuzun kendi doktorluk web sitesinde yer almasını talep ettiği içerikler toplanır ve bunun yanında istenildiği takdirde muayenehane veya klinik resimleri doktorluk web sitesinde yer alması için gerekli çalışmalara başlanır.</p>
+                </li>
+
+                <li class="timeline-item">
+                  <h5>Yapılacak İşlerin Sıraya Konulması ve Görev Paylaşımı</h5>
+                  <p class="small-2"><time datetime="2018-03-26">İş Bölümü</time></p>
+                  <p>HekimLy ekibi olarak; bir projeye başlamadan önce doktorlara gerekli plan ve program yapılarak, kimin ne zaman ne işi yapacağı belirlenir ve bir işlem sırasına konulur. Bu şekilde doktorumuz veya sağlık çalışanımız ile ne kadar sürede doktorluk web sitesinin ve doktorlara özel logosunun yapılacağı bilgisi paylaşılır.</p>
+                </li>
+
+                <li class="timeline-item">
+                  <h5>Doktorlara Özel Logo Tasarımı</h5>
+                  <p class="small-2"><time datetime="2018-04-14">Logo</time></p>
+                    <p><img src="{% static 'hekimlysite/img/logodizayn.jpeg' %}" alt="doktorluk web sitesi"></p>
+                  <p>HekimLy olarak site yapımına başlamadan önce doktorlara özel logo ve doktorlara özel logoya bağlı tasarımlar yapılır. Doktorlarımıza 3 adet ilgisi doğrultusunda doktorlara özel tasarlanmış logo sunulur ve doktorumuzun onayından sonra geri kalan doktorlara özel tasarımlar HekimLy ekibince yapılır.</p>
+                </li>
+
+
+                <li class="timeline-item">
+                  <h5>Doktorlara Özel Tasarımların Baskıya Dönüştürülmesi</h5>
+                  <p class="small-2"><time datetime="2018-04-14">Baskı Süreci</time></p>
+
+                  <p>HekimLy olarak doktorlara özel site yapımına başlamadan önce doktorlara özel logo ve doktorlara özel logoya bağlı tasarımlar yapıldıktan sonra doktorumuza doktorlara özel kartvizit ve kurumsal kimlik elemenlerinin örnekleri sunulur. Doktorun seçiminden sonra doktorlara özel kurumsal kimlik tasarımları baskıya verilir.</p>
+
+                </li>
+
+                  <li class="timeline-item">
+                  <h5>Doktorlara Özel Web Sitesi Kodlanması</h5>
+                  <p class="small-2"><time datetime="2018-03-26">Yazılım</time></p>
+                      <p><img src="{% static 'hekimlysite/img/yazilimsurec.jpeg' %}" alt="hekim web sitesi"></p>
+                  <p>Doktorlara özel tasarlanan logo ve tasarımlar ile birlikte doktorlara özel web sitesi çizilir ve doktorlara özel işlevselliği eklenerek demo versiyonumuz doktor veya sağlık çalışanımızın beğenisine sunulur. Doktorumuzun beğenmediği kısımlar 1 haftalık revizyon süresince HekimLy ekibi tarafından doktorumzun istekleri doğrultusunda değiştirilir. Doktorumuzun beğeneceği hale geldikten sonra son ürün olarak doktorumuza, doktorlara özel yönetim paneli şifresi ile birlikte teslim edilir.</p>
+                </li>
+
+                <li class="timeline-item">
+                  <h5>Doktorlara Özel Sosyal Medya Hesaplarının Açılması</h5>
+                  <p class="small-2"><time datetime="2018-04-14">Sosyal Medya</time></p>
+
+                  <p>Doktorlara özel sosyal medya hesapları doktorların istekleri doğrultusunda açılır ve ilk doktorluk içerikleri sosyal medya hesaplarında yayınlanır. Doktorlara özel açılan sosyal medya hesapları sayesinde doktorlar hastalarına daha kolay ulaşabilirler.</p>
+                </li>
+
+                </li>
+
+                  <li class="timeline-item">
+                  <h5>Doktorlara Özel SEO Çalışması</h5>
+                  <p class="small-2"><time datetime="2018-03-26">Dijital Pazarlama</time></p>
+                      <p><img src="{% static 'hekimlysite/img/digitalmarketing.jpeg' %}" alt="doktorlara özel profesyonel web sitesi arama motoru optimizasyonu çalışması"></p>
+                  <p>Doktorumuzun faaliyet alanlarına özel olmak üzere doktur web sitesinde, doktorlara özel SEO çalışması yapılır ve doktorumuzun, doktorlara özel olarak planlanan dijital pazarlama stratejisi birlikte belirlenir.</p>
+                </li>
+
+
+              </ol>
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </section>
+
+
+
+
+
+{% include 'hekimlysite/components/footer.html' %}

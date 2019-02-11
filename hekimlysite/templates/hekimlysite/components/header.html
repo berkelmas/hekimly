@@ -1,0 +1,145 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      {% if nbar == 'index' %}
+            <meta name="description" content="Doktorlar için Profesyonel Doktorlara Özel Web Sitesi, Kurumsal Kimlik ve Dahası Tek Bir Pakette">
+            <meta name="keywords" content="doktorluk sitesi, doktor sitesi, doktorlara özel web tasarım, hekim sitesi, hekimlere özel web sitesi, hekimlere özel kurumsal kimlik, dokotr kertviziti, doktor antetli kağıt, doktor web tasarım, doktorluk web tasarım hizmeti, doktorlara özel web sayfası, doktorluk web sayfası">
+
+            <!--  Open Graph Tags -->
+            <meta property="og:title" content="HekimLy">
+            <meta property="og:description" content="Doktorlar için Profesyonel Doktorlara Özel Web Sitesi, Kurumsal Kimlik ve Dahası Tek Bir Pakette">
+            <meta property="og:url" content="https://www.hekimly.com">
+            <title>HekimLy - Web Tasarım ve Kurumsal Kimlik</title>
+
+      {% elif nbar == 'about' %}
+
+            <meta name="description" content="HekimLy doktorlara ve sağlık çalışanlarına web sitesi ve kurumsal kimlik çalışmalarının yanında; dijital dünyada sağlıkçılarımızın yüzleri olan ve daha iyi yerlere gelmeyi hedefleyen doktorlara özel bir web ajansıdır.">
+            <meta name="keywords" content="hekimly, hekimly nedir, doktorlara özel web tasarım hakkında, hekim sitesi hakkında, kurumsaly ile hekimlere özel web sitesi, kurumsaly hekimlere özel kurumsal kimlik, hekimly hakkında, hekimly kimdir">
+
+            <!--  Open Graph Tags -->
+            <meta property="og:title" content="HekimLy-Hakkımızda">
+            <meta property="og:description" content="HekimLy doktorlara özel web sayfası ve sağlıkçılara özel kurumsal kimlik çalışmalarının yanında; dijital dünyada doktorlarımızı temsil eden ve daha iyi yerlere gelmeyi hedefleyen doktorlara özel bir web ajansıdır.">
+            <meta property="og:url" content="https://www.hekimly.com/hakkimizda/">
+            <title>HekimLy - Hakkımızda</title>
+
+      {% elif nbar == 'services' %}
+
+
+            <meta name="description" content="Doktorlar için Hekimly Tarafından Sunulan Hizmetler Kurumsal Web Sitesi, Doktorlara Özel Kartvizit ve Dahasıdır.">
+            <meta name="keywords" content="doktorlara özel web sitesi, doktorlara özel kartvizit, doktorlara özel kurumsal kimlik, doktorluk kurumsal kimliği, doktorluk sitesi">
+
+            <!--  Open Graph Tags -->
+            <meta property="og:title" content="HekimLy-Hizmetlerimiz">
+            <meta property="og:description" content="Doktorlar için Sunulan Profesyonel Hekimly Hizmetlerine Doktorluk Web Sitesi ve Doktorlara Özel Kurumsal Kimlik Çalışmaları Dahildir.">
+            <meta property="og:url" content="https://www.hekimly.com/hizmetlerimiz/">
+            <title>HekimLy - Hizmetlerimiz</title>
+
+      {% elif nbar == 'articles' %}
+
+
+            <meta name="description" content="HekimLy olarak doktorlarımızın dijital dünyada nasıl yer almaları gerektiği konusunda hem gelişiyor hem de ilgililere bu konudaki yayınlarımızı sunuyoruz.">
+            <meta name="keywords" content="doktorluk sitesi makaleleleri, doktorluk sitesi nasıl olmalı, doktorluk sitelerinde dikkat edilmesi gerekenler">
+
+            <!--  Open Graph Tags -->
+            <meta property="og:title" content="HekimLy-Yayınlar">
+            <meta property="og:description" content="Doktorlara özel web siteleri nasıl olmalı konusundaki yayınlarımız">
+            <meta property="og:url" content="https://www.hekimly.com/makaleler/">
+            <title>HekimLy - Yayınlarımız</title>
+
+      {% elif nbar == 'process' %}
+
+            <meta name="description" content="Doktor Web sitesi ve doktor kurumsal kimlik çalışması süreci nasıl işler ve hangi aşamalardan geçerek tamamlanır?">
+            <meta name="keywords" content="doktorluk sitesi süreci, doktorlara özel web sitesi yapımı, doktorluk kurumsal kimlik nasıl işler">
+
+            <!--  Open Graph Tags -->
+            <meta property="og:title" content="HekimLy-Süreç">
+            <meta property="og:description" content="Doktorlara özel web sitesi ve kurumsal kimlik tasarımı süreci nasıl işler">
+            <meta property="og:url" content="https://www.hekimly.com/surec/">
+            <title>HekimLy - Süreç</title>
+
+      {% elif nbar == 'faq' %}
+
+            <meta name="description" content="Doktorlara özel web sitesi yapımı ve kurumsal kimlik çalışmaları konusunda sıkça sorulan sorular">
+            <meta name="keywords" content="doktor sitesi, doktor sitesi sık sorulan sorular, doktor sitesi sıkça sorulan sorular">
+
+            <!--  Open Graph Tags -->
+            <meta property="og:title" content="HekimLy-Sorular">
+            <meta property="og:description" content="Doktor siteleri hakkında merak edilen sorular ve sıkça doktorların sorduğu sorular">
+            <meta property="og:url" content="https://www.hekimly.com/sorular/">
+            <title>HekimLy - Sık Sorulan Sorular</title>
+
+      {% elif nbar == 'contact' %}
+
+
+            <meta name="description" content="Doktorlara özel web sitesi ve kurumsal kimlik çalışmaları için iletişime geçin">
+            <meta name="keywords" content="doktorlara özel site için iletişim, bize ulaşın, iletişime geç">
+
+            <!--  Open Graph Tags -->
+            <meta property="og:title" content="HekimLy-İletişim">
+            <meta property="og:description" content="Doktorlar için Profesyonel Doktorlara Özel Web Sitesi, Kurumsal Kimlik ve Dahası Tek Bir Pakette">
+            <meta property="og:url" content="https://www.hekimly.com/iletisim/">
+            <title>HekimLy - İletişim</title>
+
+      {% elif nbar == 'articledetail' %}
+
+            <meta name="description" content="{{ makale.makale_meta_description }}">
+            <meta name="keywords" content="{{ makale.makale_meta_keywords }}">
+
+            <!--  Open Graph Tags -->
+            <meta property="og:title" content="HekimLy - {{ makale.makale_baslik }}">
+            <meta property="og:description" content="{{ makale.makale_meta_description }}">
+            <meta property="og:url" content="https://www.hekimly.com/{{ makale.makale_slug }}">
+            <title>HekimLy - {{ makale.makale_baslik }}</title>
+
+      {% endif %}
+
+
+
+    <!-- Styles -->
+    <link href="{% static 'hekimlysite/css/page.min.css' %}" rel="stylesheet">
+    <link href="{% static 'hekimlysite/css/style.css' %}" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% static 'hekimlysite/img/kurumsalyyazısızlogo.png' %}">
+    <link rel="icon" href="{% static 'hekimlysite/img/kurumsalyyazısızlogo.png' %}">
+
+
+
+
+  </head>
+
+  <body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left mr-4">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="{% url 'index' %}">
+            <img width="120" class="logo-dark" src="{% static 'hekimlysite/img/hekimlysiyah.png' %}" alt="logo">
+            <img width="120" class="logo-light" src="{% static 'hekimlysite/img/hekimlybeyaz.png' %}" alt="logo">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <nav class="nav nav-navbar ml-auto">
+            <a style="text-transform: none;" class="nav-link {% if nbar == 'index' %}active{% endif %}" href="{% url 'index' %}">Ana Sayfa</a>
+            <a style="text-transform: none;" class="nav-link {% if nbar == 'about' %}active{% endif %}" href="{% url 'about' %}">Hakkımızda</a>
+            <a style="text-transform: none;" class="nav-link {% if nbar == 'services' %}active{% endif %}" href="{% url 'services' %}">Hizmetler</a>
+              <a style="text-transform: none;" class="nav-link {% if nbar == 'articles' %}active{% endif %}" href="{% url 'articles' %}">Yayınlarımız</a>
+            <a style="text-transform: none;" class="nav-link {% if nbar == 'process' %}active{% endif %}" href="{% url 'process' %}">Süreç</a>
+            <a style="text-transform: none;" class="nav-link {% if nbar == 'faq' %}active{% endif %}" href="{% url 'faq' %}">Sık Sorulan Sorular</a>
+            <a style="text-transform: none;" class="nav-link {% if nbar == 'contact' %}active{% endif %}" href="{% url 'contact' %}">İletişim</a>
+          </nav>
+
+        </section>
+
+      </div>
+    </nav><!-- /.navbar -->

@@ -1,0 +1,88 @@
+{% load static %}
+
+
+{% include 'hekimlysite/components/header.html' %}
+
+    <!-- Header -->
+    <header class="header pb-9 pt-10" style="background-image: url('{% static 'hekimysite/img/hekimly5.png' %}')">
+        <div class="overlay opacity-75" style="background-image: linear-gradient(to top, #989898 0%, #4c8bb1 100%);"></div>
+        <canvas class="constellation" data-radius="0"></canvas>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 style="color: white" class="fw-200 mb-6">İletişim</h1>
+            <p style="color : white;" class="lead-2">Doktorluk Kimliğiniz İçin En Uygun Doktorlara Özel Kurumsal Kimlik Paketini Birlikte Belirleyelim</p>
+
+            <hr class="w-50px ml-0">
+
+          </div>
+        </div>
+      </div>
+    </header><!-- /.header -->
+
+<br>
+<br>
+
+<div class="shadow-8">
+      <section class="section">
+        <div class="container">
+
+          <div class="row gap-y">
+            <div class="col-lg-6">
+              <h3>Bize Ulaşın</h3>
+              <br>
+
+              <form method="POST">
+                  {% csrf_token %}
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input class="form-control form-control-lg" type="text" name="adsoyad" placeholder="Ad-Soyad">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <input class="form-control form-control-lg" type="text" name="email" placeholder="Email/Telefon">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control form-control-lg" rows="4" placeholder="Mesajınız" name="mesaj"></textarea>
+                </div>
+
+                <button class="btn btn-lg btn-primary" type="submit">Mesaj Gönder</button>
+              </form>
+
+
+            </div>
+
+
+            <div class="col-lg-5 ml-auto text-center text-lg-left">
+              <hr class="d-lg-none">
+              <h3>HekimLy İletişim Bilgileri</h3>
+              <br>
+              <p>
+                  Yumurtacı Abdi Bey Cd. Concord İstanbul B Blok No:5, 34720
+                  Kadıköy / İstanbul, Türkiye
+              </p>
+                <p><a href="tel:+908508408276">+90 (850) 840 82 76</a></p>
+              <p>info@kurumsaly.com</p>
+              <div class="fw-400">Sosyal Medyada Biz</div>
+              <div class="social social-sm social-inline">
+                <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+</div>
+
+<br><br>
+
+
+
+
+
+
+{% include 'hekimlysite/components/footer.html' %}

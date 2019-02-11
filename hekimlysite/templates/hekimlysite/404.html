@@ -1,0 +1,46 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="HekimLy - Sayfa Bulunamadı 404 ">
+    <meta name="keywords" content="sayfa bulunamadı, 404,  page not found">
+
+    <title>HekimLy - Sayfa Bulunamadı</title>
+
+    <!-- Styles -->
+    <link href="{% static 'hekimlysite/css/page.min.css' %}" rel="stylesheet">
+    <link href="{% static 'hekimlysite/css/style.css' %}" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% static 'hekimlysite/img/kurumsalyyazısızlogo.png' %}">
+    <link rel="icon" href="{% static 'hekimlysite/img/kurumsalyyazısızlogo.png' %}">
+
+  </head>
+
+  <body class="layout-centered bg-gray">
+
+
+    <!-- Main Content -->
+    <main class="main-content text-center pb-lg-8">
+      <div class="container">
+
+        <h1 class="display-1 text-muted mb-7">Sayfa Bulunamadı 404</h1>
+        <p class="lead">Aradığınız Sayfa Bulunamadı</p>
+        <br>
+        <button class="btn btn-secondary w-150 mr-2" type="button" onclick="window.history.back();">Geri Dön</button>
+        <a class="btn btn-secondary w-150" href="{% url 'index' %}">Ana Sayfaya Dön</a>
+
+      </div>
+    </main><!-- /.main-content -->
+
+
+    <!-- Scripts -->
+    <script src="{% static 'hekimlysite/js/page.min.js' %}"></script>
+    <script src="{% static 'hekimlysite/js/script.js' %}"></script>
+
+  </body>
+</html>

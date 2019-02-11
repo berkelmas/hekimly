@@ -1,0 +1,310 @@
+{% load static %}
+
+{% include 'hekimlysite/components/header.html' %}
+
+
+    <!-- Header -->
+    <header id="home" class="header text-white h-fullscreen text-center text-lg-left" style="background-image: linear-gradient(-45deg, #70BFF6 0%, #142650 100%);">
+      <canvas class="constellation" data-radius="0"></canvas>
+      <div class="container position-static">
+        <div class="row align-items-center h-100">
+
+          <div class="col-lg-7">
+            <h1 class="display-4 fw-100">Doktorlara Özel <span class="text-primary" data-typing="Web Sitesi, Randevu Sistemi ,Kurumsal Kimlik, SEO"></span></h1>
+            <p class="lead mt-5 mb-8">Doktolara Özel Profesyonel Web Sitesi, Kurumsal Kimlik Çalışması ve Dahası Tek Pakette</p>
+            <p class="gap-xy">
+              <a style="text-transform: none;" class="btn btn-round btn-outline-light mw-150" href="{% url 'about' %}">Hakkımızda</a>
+              <a style="text-transform: none;" class="btn btn-round btn-light mw-150" href="{% url 'services' %}">Hizmetlerimiz</a>
+            </p>
+          </div>
+
+          <div class="col-lg-5 ml-auto">
+            <img class="mt-5" src="{% static 'hekimlysite/img/laptop-12.png' %}" alt="img">
+          </div>
+
+        </div>
+      </div>
+    </header><!-- /.header -->
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Populate the page
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <small>Ne Yapıyoruz?</small>
+            <h2>Hizmetlerimiz</h2>
+            <hr>
+            <p class="lead">Doktor ve sağlık çalışanı olarak kurumsal kimliğinizi kapsayacak web sitesi, kurumsal kimlik baskısı, sosyal medya yönetimi ve dahası tek yerde birleşti.</p>
+          </header>
+
+
+          <div class="row gap-y">
+
+            <div class="col-md-6 col-xl-3">
+              <div class="card card-body shadow-3 text-center">
+                <p class="my-5"><i class="icon-browser lead-6"></i></p>
+                <h5 class="mb-5 fw-500"><a href="#">Web Dizayn</a></h5>
+                <p>Doktoların ve sağlık çalışanlarının ihtiyaçlarına göre özel yazılım ve tasarımla oluşturulan şık, profesyonel kurumsal web siteleri</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+              <div class="card card-body shadow-3 text-center">
+                <p class="my-5"><i class="icon-linegraph lead-6"></i></p>
+                <h5 class="mb-5 fw-500"><a href="#">Dijital Pazarlama - SEO</a></h5>
+                <p>Doktorunu internet üzerinden arayanların doktoruna ulaşımını kolaylaştıran SEO çalışması ve dijital pazarlama çalışması ile doktora ulaşılabilirlik</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+              <div class="card card-body shadow-3 text-center">
+                <p class="my-5"><i class="icon-megaphone lead-6"></i></p>
+                <h5 class="mb-5 fw-500"><a href="#">Kurumsal Kimlik</a></h5>
+                <p>Doktorlara ve sağlık çalışanlarına özel kartvizit, antetli kağıt, dosya, kalem, ajanda ve kurumsal kimliğinizi oluşturan dahasının şık tasarımı</p>
+              </div>
+            </div>
+
+                          <div class="col-md-6 col-xl-3">
+              <div class="card card-body shadow-3 text-center">
+                <p class="my-5"><i class="icon-phone lead-6"></i></p>
+                <h5 class="mb-5 fw-500"><a href="#">Sosyal Medya Yönetimi</a></h5>
+                <p>Doktorların ve sağlıkçıların ihtiyaçlarına özel sosyal medya mecralarının yönetimi ile; ilgili hastalara daha kolay ulaşım imkanı</p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="section py-7" style="background-color: #5CB8E3">
+        <div class="container">
+          <div class="row gap-y align-items-center">
+            <div class="col-md-9">
+              <h4 class="mb-0 text-white text-center text-md-left">Size Uygun Doktorlara Özel Hizmet Paketini Öğrenmek İçin <strong>Bize Ulaşın!</strong></h4>
+            </div>
+
+            <div class="col-md-3 text-center text-md-right">
+              <a class="btn btn-lg btn-round btn-light" href="tel:+908508408276">Hemen Ara</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <small>Nasıl Çalışıyoruz?</small>
+            <h2>Hizmet Anlayışımız</h2>
+            <hr>
+            <p class="lead">Doktor ve Sağlık Çalışanlarının Dijital Dünyadaki Yüzü Oluyoruz. Muayenehaneniz/Kliniğiniz İçin En İyisi</p>
+          </header>
+
+
+          <div class="row gap-y">
+
+            <div class="col-sm-6 col-lg-4">
+              <p><i class="icon-mobile text-primary lead-6"></i></p>
+              <hr class="mt-0 ml-0 w-10 border-primary">
+              <h6>Mobil Uyumlu Dizayn</h6>
+              <p>Doktolara ve sağlık çalışanlarına özel yaptığımız web sitesi ve diğer tasarımlarda mobil ve diğer cihazlara olan uyumluluk temel prensibimiz.</p>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <p><i class="icon-gears text-success lead-6"></i></p>
+              <hr class="mt-0 ml-0 w-10 border-success">
+              <h6>Yönetim Paneli</h6>
+              <p>Doktolara ve sağlık çalışanlarına özel web sitenizin kapsamlı yönetimini; içerik ekleme/çıkarma, gelen iletişim taleplerini yönetme ve dahasını yapabilirsiniz. </p>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <p><i class="icon-tools text-info lead-6"></i></p>
+              <hr class="mt-0 ml-0 w-10 border-info">
+              <h6>İhtiyaçlarınıza Uygun Tasarım ve Yazılım</h6>
+              <p>Doktor olarak sağlık sektöründeki ihtiyaçlarınıza uygun; bunun yanında tarzınızı yansıtan web siteniz ile tanışın.</p>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <p><i class="icon-layers text-danger lead-6"></i></p>
+              <hr class="mt-0 ml-0 w-10 border-danger">
+              <h6>Adım Adım İşleyiş</h6>
+              <p>Proje aşamasında adım adım sizin beğenileriniz göz önüne alınarak işleyen tasarım ve kodlama süreci</p>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <p><i class="icon-recycle text-warning lead-6"></i></p>
+              <hr class="mt-0 ml-0 w-10 border-warning">
+              <h6>Sürdürülebilir İşleyiş</h6>
+              <p>Tek seferlik değil; ne zaman dijital dünyada yanınızda olmamız gerekse, yanınızda olabileceğimiz iş planlaması ile ilerleyelim.</p>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <p><i class="icon-chat text-dark lead-6"></i></p>
+              <hr class="mt-0 ml-0 w-10 border-dark">
+              <h6>Sürekli Destek</h6>
+              <p>Kurumsal hattımızdan sürekli doktor ve sağlık çalışanlarımıza dijital dünyadaki sorunları için destek hizmeti.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+        <style>
+
+
+
+
+
+        </style>
+
+
+              <section class="section p-0">
+        <div class="container-fluid px-0">
+          <div class="row no-gap">
+
+            <div class="col-md-6 bg-gray px-5 py-6 p-md-8">
+
+              <h2 class="mb-5">HekimLy ile Doktorlar Dijitalde <strong>Bir Adım Önde</strong></h2>
+              <p>HekimLy ile neler yapabildiğimizi görmek için demo web sitemize göz atabilirsiniz.</p>
+              <br>
+                <div>
+              <button class="btn btn-outline-primary"><a href="https://berkelmas11.pythonanywhere.com">HEMEN İNCELE</a></button>
+                </div>
+            </div>
+
+
+            <div class="col-md-5 px-5 py-6 p-md-8">
+                <img src="{% static 'hekimlysite/img/laptop-12.png' %}" alt="">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+              <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <small>Doktolar İçin En İyisi</small>
+            <h2>Paketler</h2>
+            <hr>
+            <p class="lead">HekimLy ile Dijital Dünyadaki Sağlık Sektöründeki İhtiyaçlarınız Doğrultusunda Size En Uygun Paketi Seçin; Dijital Dünyadaki İlk Adımalarınızı İşin Uzmanları İle Birlikte Atın</p>
+          </header>
+
+
+          <div class="row gap-y">
+
+            <div class="col-lg-4">
+              <div class="pricing-3">
+                <h6 class="plan-name">Web Sitesi Paketi</h6>
+                  <hr>
+                <ul>
+                  <li><strong>Profesyonel Web Sitesi</strong></li>
+                  <li data-toggle="tooltip" data-placement="top" title=".com, .com.tr, .net vb. alan adı">İstenilen Uzantıda Domain(Alan Adı)</li>
+                  <li>Arama motorları için optimizasyon çalışması (SEO)</li>
+                  <li data-toggle="tooltip" data-placement="top" title="https:// ile sitenize bağlanma ve Google sıralamasında üstlere çıkma">SSL Sertifikası Entegrasyonu</li>
+                    <li data-toggle="tooltip" data-placement="top" title="Web sitenizin daha hızlı açılması ve Google sıralamasında daha üstlere çıkma">AMP Yapısal Veri Entegrasyonu </li>
+                    <li>Bir yıllık site bakımı</li>
+                    <li data-toggle="tooltip" data-placement="top" title="adsoyad@alanadiniz.com şeklinde kurumsal mail adresiniz">Kurumsal Mail Adreslerinin Kurulumu</li>
+                    <li data-toggle="tooltip" data-placement="top" title="Yönetim paneli sayesinde hiçbir kod veya yazılım bilginiz olmadan sitenizdeki içerikleri düzenleyebilir, yeni yazılar ekleyebilir ve web sitenizi sürekli isteğiniz doğrultusunda güncel tutabilirsiniz.">Web Sitesi Yönetim Paneli</li>
+                    <li><strong>Opsiyonel Hizmetler</strong></li>
+                    <li data-toggle="tooltip" data-placement="top" title="Opsiyonel: Tam kurumsal, çeşitli platformlarda dijital pazarlama bütçesi ayırmak isteyen firmalar için; tam profesyonel SEO danışmanlık hizmeti">SEO Danışmanlık Hizmeti </li>
+                    <li data-toggle="tooltip" data-placement="top" title="Opsiyonel: Profesyonel Sosyal Medya Hesapları Yönetimi ve İçerik Üretimi">Sosyal Medya Hesap Yönetimi </li>
+                </ul>
+                <br>
+                <a class="btn btn-outline-primary btn-round w-200" href="tel:+908508408276">Hemen Ara</a>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4">
+              <div class="pricing-3 popular">
+                <span class="popular-tag">Önerilen</span>
+                <h6 class="plan-name">Kurumsal Paket</h6>
+                  <hr>
+                <ul>
+                  <li><strong>Profesyonel Web Sitesi</strong></li>
+                  <li data-toggle="tooltip" data-placement="top" title=".com, .com.tr, .net vb. alan adı">İstenilen Uzantıda Domain(Alan Adı)</li>
+                  <li>Arama motorları için optimizasyon çalışması (SEO)</li>
+                  <li data-toggle="tooltip" data-placement="top" title="https:// ile sitenize bağlanma ve Google sıralamasında üstlere çıkma">SSL Sertifikası Entegrasyonu</li>
+                    <li data-toggle="tooltip" data-placement="top" title="Web sitenizin daha hızlı açılması ve Google sıralamasında daha üstlere çıkma">AMP Yapısal Veri Entegrasyonu </li>
+                    <li>Bir yıllık site bakımı</li>
+                    <li data-toggle="tooltip" data-placement="top" title="adsoyad@alanadiniz.com şeklinde kurumsal mail adresiniz">Kurumsal Mail Adreslerinin Kurulumu</li>
+                    <li data-toggle="tooltip" data-placement="top" title="Yönetim paneli sayesinde hiçbir kod veya yazılım bilginiz olmadan sitenizdeki içerikleri düzenleyebilir, yeni yazılar ekleyebilir ve web sitenizi sürekli isteğiniz doğrultusunda güncel tutabilirsiniz.">Web Sitesi Yönetim Paneli</li>
+                    <li data-toggle="tooltip" data-placement="top" title="Web Sitesi Yönetim Paneli üzerinden SMS Paketlerinin yönetimi ve özel günlerde otomatik SMS gönderimi">SMS Paketlerinin yönetimi </li>
+                    <li data-toggle="tooltip" data-placement="top" title="Sabit Hattınızı Arayanları ve Sizin Aradıklarınızı Görmenizi Sağlayan Panel">Son Aramalar Paneli </li>
+                    <li><strong>Tam Kurumsal Kimlik Çalışması </strong></li>
+                    <li data-toggle="tooltip" data-placement="top" title="3 özgün, size özel tasarlanmış demo sunulur, arasından seçim yaparsınız.">Kurumsal Logo Tasarımı </li>
+                    <li data-toggle="tooltip" data-placement="top" title="Kartvizit tasarımı ve 1000 adet basılmış kartvizit">Kartvizit tasarımı ve baskı </li>
+                    <li>2000 Adet SMS Paketi</li>
+                    <li data-toggle="tooltip" data-placement="top" title="Sosyal Medya Hesaplarının Açılması ve İlk içeriklerin üretilmesi">Sosyal Medya Hesapları </li>
+                    <li data-toggle="tooltip" data-placement="top" title="0216 veya 0850’li hatların alınması ve istenildiği takdirde çağrıların cep telefonuna yönlendirilmesi">Çağrı Merkezi Yapılandırılması </li>
+                    <li data-toggle="tooltip" data-placement="top" title="Sabit hatlar için istenildiği takdirde telesekreter hizmeti">Telesekreter Hizmeti </li>
+                    <li>Profesyonel Fotograf Çekimi</li>
+                    <li><strong>Opsiyonel Hizmetler</strong></li>
+                    <li data-toggle="tooltip" data-placement="top" title="Opsiyonel: Tam kurumsal, çeşitli platformlarda dijital pazarlama bütçesi ayırmak isteyen firmalar için; tam profesyonel SEO danışmanlık hizmeti">SEO Danışmanlık Hizmeti </li>
+                    <li data-toggle="tooltip" data-placement="top" title="Opsiyonel: Profesyonel Sosyal Medya Hesapları Yönetimi ve İçerik Üretimi">Sosyal Medya Hesap Yönetimi </li>
+                </ul>
+                <br>
+                <a style="background-color: #4AB6EC" class="btn btn-round btn-primary w-200" href="tel:+908508408276">Hemen Ara</a>
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-4">
+              <div class="pricing-3">
+                <h6 class="plan-name">Düzenlenebilir Paket</h6>
+                  <hr>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                    <li>İstekleriniz Doğrultusunda Düzenlenebilir Paket İçin İletişime Geçiniz</li>
+                </ul>
+                <br>
+                <a class="btn btn-outline-primary btn-round w-200" href="tel:+908508408276">Hemen Ara</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+              <section class="section py-7 shadow-8">
+        <div class="container">
+          <div class="row gap-y align-items-center">
+            <div class="col-md-6 text-center text-md-left">
+              <h3>Size Uygun Paketi Öğrenmek İçin Hemen Arayın.</h3>
+              <p>HekimLy ile kurumsal kimliğinize ve doktorlara ve sağlık çalışanlarına özel web sitenize hemen sahip olun</p>
+            </div>
+
+            <div class="col-md-auto ml-auto text-center text-md-right">
+              <div class="form-inline justify-content-center">
+
+                <a class="btn btn-lg btn-outline-primary mb-2" href="tel:+908508408276">Hemen ara</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <br>
+
+    </main>
+
+
+{% include 'hekimlysite/components/footer.html' %}

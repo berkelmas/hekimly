@@ -1,0 +1,83 @@
+{% load static %}
+
+{% include 'hekimlysite/components/header.html' %}
+
+
+    <!-- Header -->
+    <header class="header pb-9 pt-10" style="background-image: url('{% static 'hekimlysite/img/hekimly6.jpeg' %}')">
+        <div class="overlay opacity-75" style="background-image: linear-gradient(to top, #989898 0%, #4c8bb1 100%);"></div>
+
+       <canvas class="constellation" data-radius="0"></canvas>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 style="color: white" class="fw-200 mb-6">Sık Sorulan Sorular</h1>
+            <p style="color : white;" class="lead-2">Doktorlarımızdan tarafımıza sıkça yöneltilen sorulardan bazıları</p>
+
+            <hr class="w-50px ml-0">
+
+          </div>
+        </div>
+      </div>
+    </header><!-- /.header -->
+
+      <section class="section">
+          <div class="shadow-7">
+        <div class="container">
+          <header class="section-header">
+              <br>
+            <small>Sık Sorulan Sorular</small>
+            <h2>Sık Sorulan Sorular</h2>
+            <hr>
+            <p>Sorularınız mı var? Cevaplar burada. Bunların dışında bir sorunuz varsa, lütfen <strong>iletişime geçin.</strong></p>
+          </header>
+
+
+          <div class="row gap-y">
+            <div class="col-md-6">
+              <h5>Doktorlara Özel Web Sitemi Ne Kadar Sürede Teslim Alabilirim?</h5>
+              <p>Doktorlara özel içerik planlaması yapıldıktan sonra 2 hafta içerisinde doktorlara özel web siteniz demo versiyonu ile doktorlara teslim edilir. Daha sonraki süreçte yayında olan doktorluk sitesinin doktorlarımız tarafından talep edilen revizyonları yerine getirilir.</p>
+            </div>
+
+
+            <div class="col-md-6">
+              <h5>Ödeme Ne Şekilde Gerçekleşiyor?</h5>
+              <p>Doktorlara özel proje başlamadan önce doktorlara özel proje bedelinin yarısı; bitiminde ise geri kalan yarısı şeklinde gerçekleşiyor.</p>
+            </div>
+
+
+            <div class="col-md-6">
+              <h5>Doktorlara Özel Tasarımdan Sonra Baskı Hizmeti Nasıl Oluyor?</h5>
+              <p>Doktorlara özel tasarım süreci tamamlandıktan sonra; doktorlarımıza baskı için bir doktorlara özel bir numune kutusu ulaştırılıyor. Doktorlara özel numune kutusu içerisinden doktorlarımızın seçtiği kalitedeki materyallerle doktorlara özel hazırlanan tasarımlar baskıya gönderiliyor.</p>
+            </div>
+
+
+            <div class="col-md-6">
+              <h5>Doktorlara Özel Web Sitemin Bulunduğu Sunucudaki Dosyalara Ulaşabiliyor Muyum?</h5>
+              <p>Doktorlara özel web site dosyaları; doktorların adına alınan sunucuda doktor kullanıcı adı ve şifresi doktorlarımızda olmak üzere tutulur. Bu nedenle, doktorlarımız istediği zaman doktorlara özel web sitesinin bulunduğu sunucu dosyalarına ulaşabilir, istediği kişilere incelettirebilirler.</p>
+            </div>
+
+
+            <div class="col-md-6">
+              <h5>Daha Önceden Alınmış Domain/Alan Adımda Doktorlara Özel Web Sitemi Görüntüleyebiliyor Muyum?</h5>
+              <p>Daha önceden doktorlarımız tarafından alınmış domain adresinin bilgilerini doktorlarımızın bize ulaştırması durumunda; doktorlara özel web sitesini, doktorumuzun bize ulaştırdığı domain adresi üzerinden yayınlayabiliyoruz.</p>
+            </div>
+
+
+            <div class="col-md-6">
+              <h5>Hangi Sunucuları Kullanıyorsunuz? Bu Sunucuların Güvenlik Durumu Nedir?</h5>
+              <p>Doktorlara özel projelerde kullandığımız sunucular Google Cloud ve Amazon AWS sunucularıdır. Tüm delinme testlerinde en yüksek puanı almışlardır. Sunucu bazında güvenlik konusunda doktorlarımızın bir endişeniz olmasın.</p>
+            </div>
+          </div>
+
+        </div>
+          </div>
+      </section>
+
+
+
+
+
+
+
+{% include 'hekimlysite/components/footer.html' %}
