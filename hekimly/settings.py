@@ -25,7 +25,7 @@ SECRET_KEY = '6^x=km323c4jirlwfs76_k49$ecwwp=wbh^2cswi&ez4z4t_+1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['134.209.255.218', 'www.hekimly.com', 'hekimly.com']
 
 
 # Application definition
